@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./font/fonts.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<style>
+  .color_main {
+    color: #005FAD;
+  }
+  .bg_main {
+    background: #005FAD;
+  }
+  .color_prim {
+    color: #707070;
+  }
+  .nav_position {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  .nav_custom {
+    gap: 28px;
+  }
+  .font_univia {
+    font-family: "Univia Sans Family";
+  }
+  .nav_custom a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .hero_section {
+    background: url('https://raw.githubusercontent.com/antisyst/jr-portfolio/main/bootstrap_task/assets/hero_bg.png');
+    background-size: cover;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 90vh;
+    max-height: auto;
+    font-family: "Univia Sans Family";
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+    padding-left: 74px;
+    padding-right: 74px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .hero_item:nth-child(1) {
+    width: 524px;
+  }
+  .hero_item:nth-child(2) {
+    width: 747px;
+  }
+  .hero_item img {
+    width: 100%;
+  }
+  .hero_item h1 {
+    color: #707070;
+    font-size: 44px;
+  }
+  .hero_item p {
+    color: #707070;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+  .section_2 {
+    margin: 10vh;
+  }
+  .section_2 a {
+    background: #005FAD;
+    color: #ffff;
+    border-radius: 30px;
+    padding: 10px 40px;
+  }
+  .section_bg {
+    background: url('https://raw.githubusercontent.com/antisyst/jr-portfolio/main/bootstrap_task/assets/section_bg.png');
+    background-size: cover;
+    min-height: 90vh;
+    max-height: max-content;
+  }
+  .custom_img_size {
+    width: 523px;
+    height: 527px;
+    max-width: 600px;
+    max-height: 600px;
+  }
+  .after_none::after {
+    display: none;
+  }
+  .bg_gradient {
+    border-radius: 20px;
+    height: 60vh;
+    margin: 3%;
+    background: linear-gradient(57deg, #005FAD 0%, #7E7ACB 59%, #D68CDF 100%);
+  }
+  .custom_footer {
+    padding: 60px 4%;
+    margin-top: 7vh;
+    min-height: 360px;
+    max-height: max-content;
+  }
+  .custom_footer div {
+    margin: 30px;
+  }
+  .responsive_video {
+    width: 80%;
+  }
+  @media only screen and (max-width: 700px) {
+    .responsive_text {
+      font-size: 23px;
+    }
+    .hero_item h1 {
+      font-size: 23px;
+    }
+    .hero_section {
+      justify-content: center;
+      height: 100vh;
+      padding-top: 70px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    .responsive_img {
+      width: 323px;
+    height: 327px;
+    max-width: 400px;
+    max-height: 400px;
+    }
+    .responsive_video {
+      width: 310px;
+    }
+  }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light justify-content-between p-4 bg-light nav_position">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+            <img src="https://raw.githubusercontent.com/antisyst/jr-portfolio/886dad78c888965a13e3cc149e1c3877c3549dc7/bootstrap_task/assets/logo.svg" alt="">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">                   
+            <div class="navbar-nav ms-auto nav_custom">
+                <a href="#" class="nav-item nav-link text-decoration-none">Solutions</a>
+                <a href="#" class="nav-item nav-link text-decoration-none">Evidence</a>
+                <a href="#" class="nav-item nav-link text-decoration-none">Blog</a>
+                <a href="#" class="nav-item nav-link text-decoration-none">News</a>
+                <a href="#" class="nav-item nav-link text-decoration-none">Events</a>
+                <a href="#" class="nav-item nav-link text-decoration-none">Resources</a>
+                <a href="#" class="nav-item nav-link text-decoration-none">About</a>
+                <a href="#" class="nav-item nav-link text-decoration-none">Bionik Academy</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+  <!-- HERO SECTION -->
+
+  <div class="hero_section">
+    <div class="hero_item">
+      <h1 class="color_prim responsive_text">
+        Enhance Upper-Extremity Rehabilitation Results with <span class="color_main">InMotionⓇ</span> Robotic Therapy Solutions
+      </h1>
+      <p>
+        Leverage the power of robotic A.I for upper-extremity motor retraining.
+      </p>
+    </div>
+    <div class="hero_item">
+      <img src="https://raw.githubusercontent.com/antisyst/jr-portfolio/main/bootstrap_task/assets/hero_img.png" alt="">
+    </div>
+  </div>
+
+
+  <!-- SECTION 2 -->
+
+      <div class="section_2 text-center d-flex flex-column align-items-center justify-content-center">
+         <h2 class="color_main text-center font_univia responsive_text"  style="padding: 10px 4%;">Welcome to the world of Bionik Labs, where innovation and technology converge to transform the field of rehabilitation.</h2>
+         <p class="color_prim" style="padding: 0 10%;">The InMotionⓇ  Arm and InMotionⓇ  Arm/Hand solutions are designed to empower physical therapists like you to deliver exceptional care and revolutionize patient outcomes.</p>
+         <br>
+         <a href="" class="text-decoration-none font-weight-500 text-uppercase fs-5">Learn More</a>
+         <br><br><br>
+         <img src="https://raw.githubusercontent.com/antisyst/jr-portfolio/main/bootstrap_task/assets/video.png" class="responsive_video" alt="">
+      </div>
+
+      
+      <!-- SECTION 3 -->
+      <div class="text-center section_bg p-5">
+        <h1 class="text-center color_main font_univia responsive_text">Why Choose InMotionⓇ Robotic Therapy?</h1>
+        <div class="d-flex flex-row align-items-start justify-content-around flex-wrap" style="margin-top: 60px;">
+              <div>
+                <img src="https://raw.githubusercontent.com/antisyst/jr-portfolio/main/bootstrap_task/assets/bionik.png" alt="" class="custom_img_size responsive_img" style="margin-bottom: 30px;">
+              </div>
+            <div class="d-flex flex-column align-items-start gap-4" style="width: 739px;">
+              <div class="accordion" id="accordionExample" style="width: 100%; background: none;">
+                <div class="accordion-item bg-transparent" style="background: none;">
+                  <h2 class="accordion-header bg-transparent" id="headingOne">
+                    <button class="accordion-button bg-transparent after_none font_univia" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <img src="https://raw.githubusercontent.com/antisyst/jr-portfolio/886dad78c888965a13e3cc149e1c3877c3549dc7/bootstrap_task/assets/plus_svg.svg" alt=""> <span class="fs-4 color_main" style="margin-left: 16px;">Advanced Robotic Assistance:</span>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show bg-transparent" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg-transparent text-left">
+                      The InMotionⓇ  series combines cutting-edge robotics and intelligent software to provide precise and adaptive assistance during therapy sessions. These state-of-the-art devices seamlessly integrate into your rehabilitation protocols, enhancing the effectiveness of your treatments.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header bg-transparent" id="headingTwo">
+                    <button class="accordion-button collapsed bg-transparent after_none font_univia" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <img src="https://raw.githubusercontent.com/antisyst/jr-portfolio/886dad78c888965a13e3cc149e1c3877c3549dc7/bootstrap_task/assets/plus_svg.svg" alt=""> <span class="fs-4 color_main" style="margin-left: 16px;">Targeted Rehabilitation:</span>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left">
+                      The InMotionⓇ  series combines cutting-edge robotics and intelligent software to provide precise and adaptive assistance during therapy sessions. These state-of-the-art devices seamlessly integrate into your rehabilitation protocols, enhancing the effectiveness of your treatments.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header bg-transparent" id="headingThree">
+                    <button class="accordion-button collapsed bg-transparent after_none font_univia" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <img src="https://raw.githubusercontent.com/antisyst/jr-portfolio/886dad78c888965a13e3cc149e1c3877c3549dc7/bootstrap_task/assets/plus_svg.svg" alt=""> <span class="fs-4 color_main" style="margin-left: 16px;">Engaging and Interactive Sessions:</span>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse bg-transparent" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left">
+                      The InMotionⓇ  series combines cutting-edge robotics and intelligent software to provide precise and adaptive assistance during therapy sessions. These state-of-the-art devices seamlessly integrate into your rehabilitation protocols, enhancing the effectiveness of your treatments.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header bg-transparent" id="headingFourth">
+                    <button class="accordion-button collapsed bg-transparent after_none font_univia" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                      <img src="https://raw.githubusercontent.com/antisyst/jr-portfolio/886dad78c888965a13e3cc149e1c3877c3549dc7/bootstrap_task/assets/plus_svg.svg" alt=""> <span class="fs-4 color_main" style="margin-left: 16px;">Real-time Performance Feedback:</span>
+                    </button>
+                  </h2>
+                  <div id="collapseFourth" class="accordion-collapse collapse bg-transparent" aria-labelledby="headingFourth" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left">
+                      The InMotionⓇ  series combines cutting-edge robotics and intelligent software to provide precise and adaptive assistance during therapy sessions. These state-of-the-art devices seamlessly integrate into your rehabilitation protocols, enhancing the effectiveness of your treatments.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header bg-transparent" id="headingFifth">
+                    <button class="accordion-button collapsed bg-transparent after_none font_univia" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+                      <img src="https://raw.githubusercontent.com/antisyst/jr-portfolio/886dad78c888965a13e3cc149e1c3877c3549dc7/bootstrap_task/assets/plus_svg.svg" alt=""> <span class="fs-4 color_main" style="margin-left: 16px;">Easy Integration:</span>
+                    </button>
+                  </h2>
+                  <div id="collapseFifth" class="accordion-collapse collapse bg-transparent" aria-labelledby="headingFifth" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left">
+                      The InMotionⓇ  series combines cutting-edge robotics and intelligent software to provide precise and adaptive assistance during therapy sessions. These state-of-the-art devices seamlessly integrate into your rehabilitation protocols, enhancing the effectiveness of your treatments.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header bg-transparent" id="headingSixth">
+                    <button class="accordion-button collapsed bg-transparent after_none font_univia" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixth" aria-expanded="false" aria-controls="collapseSixth">
+                      <img src="https://raw.githubusercontent.com/antisyst/jr-portfolio/886dad78c888965a13e3cc149e1c3877c3549dc7/bootstrap_task/assets/plus_svg.svg" alt=""> <span class="fs-4 color_main" style="margin-left: 16px;">Evidence-Based Results:</span>
+                    </button>
+                  </h2>
+                  <div id="collapseSixth" class="accordion-collapse collapse bg-transparent" aria-labelledby="headingSixth" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left">
+                      The InMotionⓇ  series combines cutting-edge robotics and intelligent software to provide precise and adaptive assistance during therapy sessions. These state-of-the-art devices seamlessly integrate into your rehabilitation protocols, enhancing the effectiveness of your treatments.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+     </div>
+     <br><br><br>
+
+     <!-- SECTION 4 -->
+
+     <div class="section_4 text-center" style="margin: 40px 7%;">
+      <div class="d-flex flex-row align-items-center justify-content-between flex-wrap">
+        <div style="max-width: 524px; width: 100%;
+        height: 352px; margin: 30px 0;">
+          <img src="https://raw.githubusercontent.com/antisyst/jr-portfolio/main/bootstrap_task/assets/section_4.png" alt="" class="responsive_img" style="object-fit: cover;">
+        </div>
+        <div  style="width: 800px;" class="text-left">
+          <h2 class="text-left font_univia color_main fs-2">Unlock the Power of InMotionⓇ Robotic Therapy Solutions</h2>
+          <p style="margin-top: 20px;">
+            By incorporating InMotionⓇ Arm or InMotionⓇ Arm/Hand into your practice, you can unlock a new dimension of rehabilitation and transform the lives of your patients. Whether you are working with individuals recovering from stroke, traumatic brain injury, or other neurological conditions, InMotionⓇ Robotics offers a powerful tool to facilitate their journey toward recovery.
+          </p>
+        </div>
+      </div>
+     </div>
+
+
+     <!-- CAROUSEL -->
+     <div class="carousel_section bg_gradient" style="margin: 20px;">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner d-flex flex-row align-items-center" style="height: 60vh;">
+          <div class="carousel-item active" style="padding: 0 10%;">
+              <h3 class="text-center font_univia text-white responsive_text">Take the next step in revolutionizing your practice and empowering your patients with the most advanced robotic assistance available. </h3>
+              <p  class="text-center font_univia text-white" style="font-size: 15px;">To learn more about the InMotionⓇ Arm and InMotionⓇ Arm/Hand and how they can elevate your rehabilitation practice, click the button below.</p>
+              <div class="d-flex flex-row align-items-center justify-content-center">
+                <a href="" class="text-decoration-none text-center bg-white text-uppercase" style="border-radius: 30px; padding: 10px 30px; margin-top: 30px;">Explore InMotionⓇ Solutions</a>
+              </div>
+            </div>
+          <div class="carousel-item" style="padding: 0 10%;">
+            <h3 class="text-center font_univia text-white responsive_text">Take the next step in revolutionizing your practice and empowering your patients with the most advanced robotic assistance available. </h3>
+            <p  class="text-center font_univia text-white" style="font-size: 15px;">To learn more about the InMotionⓇ Arm and InMotionⓇ Arm/Hand and how they can elevate your rehabilitation practice, click the button below.</p>
+            <div class="d-flex flex-row align-items-center justify-content-center">
+              <a href="" class="text-decoration-none text-center bg-white text-uppercase" style="border-radius: 30px; padding: 10px 30px; margin-top: 30px;">Explore InMotionⓇ Solutions</a>
+            </div>
+          </div>
+          <div class="carousel-item" style="padding: 0 10%;">
+            <h3 class="text-center font_univia text-white responsive_text">Take the next step in revolutionizing your practice and empowering your patients with the most advanced robotic assistance available. </h3>
+            <p  class="text-center font_univia text-white" style="font-size: 15px;">To learn more about the InMotionⓇ Arm and InMotionⓇ Arm/Hand and how they can elevate your rehabilitation practice, click the button below.</p>
+            <div class="d-flex flex-row align-items-center justify-content-center">
+              <a href="" class="text-decoration-none text-center bg-white text-uppercase" style="border-radius: 30px; padding: 10px 30px; margin-top: 30px;">Explore InMotionⓇ Solutions</a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+      </div>
+    </div>
+
+    <p class="text-center" style="margin-top: 5vh; padding: 0 6%;">Embrace the future of rehabilitation with InMotionⓇ Robotics , and together, let's redefine what's possible in the world of physical therapy.</p>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="bg_main d-flex flex-row align-items-start justify-content-between flex-wrap custom_footer">
+        <div class="d-flex flex-column align-items-start justify-content-around flex-wrap">
+          <h4 class="text-white text-uppercase">Clinical Evidence</h4>
+          <a href="" class="text-decoration-none text-white">About</a>
+          <a href="" class="text-decoration-none text-white">Investors</a>
+          <a href="" class="text-decoration-none text-white">Disclaimer</a>
+          <a href="" class="text-decoration-none text-white">Privacy Policy</a>
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-around flex-wrap">
+          <h4 class="text-white text-uppercase">News + Events</h4>
+          <a href="" class="text-decoration-none text-white">Recent News</a>
+          <a href="" class="text-decoration-none text-white">Events</a>
+          <a href="" class="text-decoration-none text-white">Press Releases</a>
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-around flex-wrap">
+          <h4 class="text-white text-uppercase">Support</h4>
+          <a href="" class="text-decoration-none text-white">Contact Us</a>
+          <a href="" class="text-decoration-none text-white">Cleaning Procedures</a>
+          <br><br>
+          <h4 class="text-white text-uppercase">Member Portal</h4>
+          <a href="" class="text-decoration-none text-white">Register</a>
+          <a href="" class="text-decoration-none text-white">Login</a>
+        </div>
+        <div class="d-flex flex-column align-items-start justify-content-around flex-wrap">
+          <img src="https://raw.githubusercontent.com/antisyst/jr-portfolio/main/bootstrap_task/assets/footer.png" alt="" style="margin-bottom: 30px;">
+          <h4 class="text-white text-uppercase">Global Headquarters</h4>
+          <p href="" class="text-decoration-none text-white">
+            80 Coolidge Hill Road
+            Watertown, MA 02472
+            United States
+          </p>
+          <p href="" class="text-decoration-none text-white">
+            Tel: +1 617.926.4800
+            support@bioniklabs.com
+          </p>
+        </div>
+    </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
